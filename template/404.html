@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: monospace;
+      }
+      a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>404 Not Found</h3>
+    {#if (data.folders)}
+    <script>
+      if (!location.href.endsWith("/")) location.href += "/";
+    </script>
+    <div>
+      Directory listing for {data.filepath}
+      <a href="../">../</a>
+      {#for (let folder of data.folders)} {% let url = folder}
+      <a href="___url___">{folder}</a>
+      {/for}
+    </div>
+    {:else}
+    <p>
+      There is really nothing at {data.url}<br />
+      {data.filepath}
+    </p>
+    {/if}
+  </body>
+</html>

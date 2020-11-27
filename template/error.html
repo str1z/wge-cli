@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{data.error}</title>
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.4.0/styles/default.min.css" />
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.4.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+    <pre><code class="bash">{this.tagEsc(data.error.stack)}</code></pre>
+    <pre><code class="html">{this.tagEsc(data.template.raw)}</code></pre>
+    <pre><code class="html">{this.tagEsc(data.template.code)}</code></pre>
+  </body>
+</html>
