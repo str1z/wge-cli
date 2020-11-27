@@ -1,0 +1,35 @@
+{
+  "name": "wge-cli",
+  "version": "0.0.1",
+  "description": "Live server for the Wagon templating engine!",
+  "main": "index.js",
+  "bin": {
+    "wge": "./bin/index.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "cliful": "^0.0.3",
+    "wge": "^0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/str1z/wge-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "wge",
+    "wagon"
+  ],
+  "author": "str1z",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/str1z/wge-cli/issues"
+  },
+  "homepage": "https://github.com/str1z/wge-cli#readme"
+}
